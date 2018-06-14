@@ -1,0 +1,10 @@
+<% @sales.each do |sale| %>
+	<p>Detalle: <%= sale.detail %></p>
+	<p>Categoria: <%= sale.category %></p>
+	<p>Valor: <%= sale.value %></p>
+	<p>Descuento: <%= sale.discount %></p>
+	<p>Valor IVA: <%= sale.tax %></p>
+	<p>Valor Total: <%= sale.total %></p>
+<% end %>
+
+<h2><%= link_to "Crear Nueva venta", sales_new_path %></h2>

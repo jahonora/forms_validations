@@ -1,9 +1,9 @@
 class CreateSales < ActiveRecord::Migration[5.2]
   def change
     create_table :sales do |t|
-      t.integer :cod
+      t.string :cod
       t.string :detail
-      t.integer :category
+      t.string :category
       t.integer :value
       t.integer :discount
       t.integer :tax
